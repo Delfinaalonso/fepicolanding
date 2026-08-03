@@ -345,11 +345,11 @@ ul { list-style: none; }
 .auspiciantes {
   background: var(--cream-2);
   border-bottom: 0.5px solid var(--border);
-  padding: 36px 0 44px;
+  padding: 28px 0 36px;
 }
 .auspiciantes-head {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .auspiciantes-label {
   font-size: 11px;
@@ -366,8 +366,8 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 .auspiciantes-tier + .auspiciantes-tier {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 12px;
+  padding-top: 12px;
   border-top: 0.5px solid var(--border);
 }
 .tier-label {
@@ -377,7 +377,7 @@ ul { list-style: none; }
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--amber);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 /* Fila de logos: flex centrado, sin grilla ni bordes visibles */
@@ -386,7 +386,7 @@ ul { list-style: none; }
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 32px 48px;
+  gap: 16px 32px;
 }
 .auspiciante-item {
   display: flex;
