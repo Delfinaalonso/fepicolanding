@@ -341,15 +341,15 @@ ul { list-style: none; }
 }
 .cd-right-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
 
-/* ============ AUSPICIANTES — GRILLA FIJA ============ */
+/* ============ AUSPICIANTES — POR CATEGORÍA, GRILLA INVISIBLE ============ */
 .auspiciantes {
   background: var(--cream-2);
   border-bottom: 0.5px solid var(--border);
-  padding: 48px 0;
+  padding: 56px 0 64px;
 }
 .auspiciantes-head {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .auspiciantes-label {
   font-size: 11px;
@@ -358,42 +358,56 @@ ul { list-style: none; }
   text-transform: uppercase;
   color: var(--text-light);
 }
-.auspiciantes-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
+
+/* Cada categoría (Acompañan / Oro / Plata / Bronce) */
+.auspiciantes-tier {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.auspiciantes-tier + .auspiciantes-tier {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 0.5px solid var(--border);
+}
+.tier-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 24px;
+}
+
+/* Fila de logos: flex centrado, sin grilla ni bordes visibles */
+.auspiciantes-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px 48px;
 }
 .auspiciante-item {
-  background: white;
-  padding: 32px 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  text-align: center;
+  justify-content: center;
 }
+
+/* Contenedor fijo: todos los logos ocupan el mismo tamaño de caja,
+   sin importar la medida original del archivo */
 .auspiciante-box {
-  width: 120px; height: 80px;
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  padding: 8px;
+  width: 128px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .auspiciante-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
-}
-.auspiciante-name { display: none; }
-.auspiciante-item.placeholder {
-  opacity: 0.4;
-}
-.auspiciante-item.placeholder .auspiciante-box {
-  border: 1.5px dashed var(--border);
 }
 
 /* ============ MÉTRICAS ============ */
@@ -1056,7 +1070,8 @@ ul { list-style: none; }
   .hero-text { order: 2; max-width: 100%; }
   .hero-h1 { font-size: 38px; }
 
-  .auspiciantes-grid { grid-template-columns: repeat(2, 1fr); }
+  .auspiciantes-row { gap: 24px 36px; }
+  .auspiciante-box { width: 108px; height: 68px; }
   .metrics-cards { grid-template-columns: repeat(2, 1fr); }
   .evento-grid { grid-template-columns: 1fr; }
 
@@ -1088,7 +1103,9 @@ ul { list-style: none; }
 
   .evento h2, .galeria h2, .faq h2 { font-size: 28px; }
   .participa-h { font-size: 28px; }
-  .auspiciantes-grid { grid-template-columns: repeat(2, 1fr); }
+  .auspiciantes-tier { max-width: 100%; }
+  .auspiciantes-row { gap: 18px 24px; }
+  .auspiciante-box { width: 88px; height: 56px; }
   .metrics-cards { grid-template-columns: 1fr 1fr; }
   .m-num { font-size: 40px; }
   .cd-num { font-size: 42px; }
