@@ -397,11 +397,12 @@ ul { list-style: none; }
 /* Contenedor fijo: todos los logos ocupan el mismo tamaño de caja,
    sin importar la medida original del archivo */
 .auspiciante-box {
-  width: 128px;
-  height: 80px;
+  width: 180px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px;
 }
 .auspiciante-box img {
   width: 100%;
@@ -1071,7 +1072,7 @@ ul { list-style: none; }
   .hero-h1 { font-size: 38px; }
 
   .auspiciantes-row { gap: 24px 36px; }
-  .auspiciante-box { width: 108px; height: 68px; }
+  .auspiciante-box { width: 140px; height: 80px; }
   .metrics-cards { grid-template-columns: repeat(2, 1fr); }
   .evento-grid { grid-template-columns: 1fr; }
 
@@ -1105,7 +1106,7 @@ ul { list-style: none; }
   .participa-h { font-size: 28px; }
   .auspiciantes-tier { max-width: 100%; }
   .auspiciantes-row { gap: 18px 24px; }
-  .auspiciante-box { width: 88px; height: 56px; }
+  .auspiciante-box { width: 110px; height: 68px; }
   .metrics-cards { grid-template-columns: 1fr 1fr; }
   .m-num { font-size: 40px; }
   .cd-num { font-size: 42px; }
