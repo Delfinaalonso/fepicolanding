@@ -5,18 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FEPICO — Feria de Construcción y Hábitat | General Pico, La Pampa</title>
 <meta name="description" content="9, 10 y 11 de octubre 2026. La primera Feria de Construcción y Hábitat de General Pico, organizada por el Club Ferro Carril Oeste.">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LE7MS0724L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LE7MS0724L');
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Play:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1031623779731311');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1031623779731311&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -53,7 +62,7 @@
   <div class="hero-grid-bg"></div>
   <div class="hero-photo">
     <div class="hero-photo-overlay"></div>
-    <div class="hero-photo-bg" style="background-image: url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=1200&q=80'); background-size:cover; background-position:center; opacity:0.55;">
+    <div class="hero-photo-bg" style="background-image: url('assets/header.jpeg'); background-size:cover; background-position:center; opacity:0.55;">
       <div class="hero-photo-placeholder">
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
           <rect x="6" y="6" width="52" height="52" rx="4" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
@@ -137,64 +146,30 @@
 <section class="fepico-section" id="evento">
   <img src="assets/Recurso_12.svg" class="deco-fepico" aria-hidden="true">
 
-  <!-- MANIFIESTO SLIDER -->
-  <div class="manifiesto-slider" id="manifiesto-slider">
-
-    <!-- Dots de progreso -->
-    <div class="manif-dots" id="manif-dots"></div>
-
-    <!-- Slides -->
-    <div class="manif-slides" id="manif-slides">
-
-      <div class="manif-slide active">
-        <span class="tag-teal section-tag" style="margin-bottom:32px; display:inline-block;">FEPICO</span>
-        <p class="manif-hero">Toda obra nace mucho antes<br>del primer ladrillo.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-body">Empieza con una visión.<br>Con la decisión de transformar<br>una oportunidad en realidad.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-destacado">Creemos en el conocimiento<br>como motor de evolución.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-body">Porque la construcción cambia.<br>Incorpora nuevas formas de pensar,<br>nuevas herramientas, nuevos materiales<br>y nuevas maneras de habitar los espacios.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-destacado">Pero antes de todo esto,<br>existe la idea.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-body">El futuro no aparece de un día para otro.</p>
-      </div>
-
-      <div class="manif-slide">
-        <div class="manif-frases">
-          <span>Se piensa.</span>
-          <span>Se proyecta.</span>
-          <span class="manif-frases-accent">Se construye.</span>
-        </div>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-body">FEPICO nace para reunir<br>a quienes forman parte<br>de esa transformación.</p>
-      </div>
-
-      <div class="manif-slide">
-        <p class="manif-final">No venimos solamente<br>a mostrar lo que existe.<br><br><span class="manif-final-accent">Venimos a construir<br>lo que viene.</span></p>
-      </div>
-
+  <!-- MANIFIESTO full bleed -->
+  <div class="manifiesto-wrap">
+    <div class="container">
+      <span class="tag-teal section-tag">FEPICO</span>
     </div>
-
-    <!-- Indicador de scroll -->
-    <div class="manif-scroll-hint" id="manif-hint">
-      <span>Scrolleá para leer</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="manifiesto-body" id="manifiesto-body">
+      <p class="manifiesto-p manifiesto-highlight ">Toda obra nace mucho antes del primer ladrillo.</p>
+      <p class="manifiesto-p">Empieza con una visión, con la decisión de transformar una oportunidad en realidad.</p>
+      <p class="manifiesto-p">Creemos en el conocimiento como motor de evolución.</p>
+      <!-- Todo lo demás va en el desplegable -->
+      <p class="manifiesto-p manifiesto-extra">Porque la construcción cambia. Incorpora nuevas formas de pensar, nuevas herramientas, nuevos materiales y nuevas maneras de habitar los espacios.</p>
+      <p class="manifiesto-p manifiesto-extra">Pero antes de todo esto, existe la idea.</p>
+      <p class="manifiesto-p manifiesto-extra">El futuro no aparece de un día para otro.</p>
+      <p class="manifiesto-p manifiesto-extra manifiesto-highlight">Se piensa. Se proyecta. Se construye.</p>
+      <p class="manifiesto-p manifiesto-extra"><strong>FEPICO</strong> nace para reunir a quienes forman parte de esa transformación.</p>
+      <p class="manifiesto-p manifiesto-extra">No llegamos solamente para mostrar lo que existe.</p>
+      <p class="manifiesto-p manifiesto-extra manifiesto-highlight">Venimos a construir lo que viene.</p>
     </div>
-
+    <div class="manifiesto-toggle-wrap">
+      <button class="manifiesto-btn" id="manifiesto-btn" aria-expanded="false">
+        <span class="manifiesto-btn-label">Ver más</span>
+        <span class="manifiesto-btn-line"></span>
+      </button>
+    </div>
   </div>
 
   <div class="container">
@@ -209,42 +184,42 @@
       <div class="ejes-grid">
         <div class="eje-card eje-teal reveal reveal-delay-1">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#0f6e56" stroke-width="1.5"/><path d="M7 8h10M7 12h7M7 16h5" stroke="#0f6e56" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
+            <img src="assets/feriacomercial.svg " alt="Feria comercial">
+            </div>
           <div class="eje-title">Feria comercial</div>
           <p class="eje-body">Tres días donde empresas, profesionales, instituciones y entidades financieras compartirán las jornadas en el primer encuentro del sector de la construcción en La Pampa.</p>
         </div>
         <div class="eje-card eje-amber reveal reveal-delay-1">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#d4832a" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#d4832a" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <img src="assets/capacitaciones.svg" alt="Capacitaciones">
           </div>
-          <div class="eje-title">Workshops</div>
+          <div class="eje-title">Capacitaciones</div>
           <p class="eje-body">Propuestas desarrolladas por empresas para ser parte de los avances en la construcción.</p>
         </div>
         <div class="eje-card eje-teal reveal reveal-delay-2">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#0f6e56" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#0f6e56" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#0f6e56" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <img src="assets/charlas.svg" alt="Charlas">
           </div>
-          <div class="eje-title">Charlas y capacitaciones</div>
+          <div class="eje-title">Charlas </div>
           <p class="eje-body">Charlas y paneles con referentes del sector de la construcción y el diseño.</p>
         </div>
         <div class="eje-card eje-amber reveal reveal-delay-2">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke="#d4832a" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <img src="assets/espaciosrecreativos.svg" alt="Espacios recreativos">
           </div>
           <div class="eje-title">Espacios recreativos</div>
           <p class="eje-body">Cantina. Juegos. Sorteos. Experiencias domóticas.</p>
         </div>
         <div class="eje-card eje-teal reveal reveal-delay-3">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22c0 0-8-5-8-13C4 5.4 7.6 2 12 2s8 3.4 8 7c0 8-8 13-8 13z" stroke="#0f6e56" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 8c-1.5 1.5-2 3.5-1 6" stroke="#0f6e56" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <img src="assets/espacioeco.svg" alt="Espacio eco sustentable">
           </div>
           <div class="eje-title">Espacio eco sustentable</div>
           <p class="eje-body">Innovación y compromiso ambiental aplicados a la construcción.</p>
         </div>
         <div class="eje-card eje-amber reveal reveal-delay-3">
           <div class="eje-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><line x1="12" y1="1" x2="12" y2="23" stroke="#d4832a" stroke-width="1.5" stroke-linecap="round"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="#d4832a" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <img src="assets/financiamiento.svg" alt="Financiamiento">
           </div>
           <div class="eje-title">Financiamiento</div>
           <p class="eje-body">Entidades financieras estarán presentes para lanzar créditos para el sector.</p>
@@ -275,7 +250,7 @@
         <div class="cta-badge badge-teal">Auspiciante</div>
         <div class="cta-card-title">Auspiciá FEPICO</div>
         <p class="cta-card-body">Presencia en toda la comunicación del evento: gráfica, pantalla LED, stands y merchandising oficial.</p>
-        <a href="#" class="cta-card-btn btn-bg-teal" target="_blank" rel="noopener">
+        <a href="https://forms.gle/hNcFjzt6q378EgoQ7" class="cta-card-btn btn-bg-teal" target="_blank" rel="noopener">
           Quiero auspiciar
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -284,7 +259,7 @@
         <div class="cta-badge badge-amber">Expositor</div>
         <div class="cta-card-title">Alquilá tu stand</div>
         <p class="cta-card-body">Stands en salón, carpa y exterior. Distintos tamaños y ubicaciones para cada necesidad.</p>
-        <a href="#" class="cta-card-btn btn-bg-amber" target="_blank" rel="noopener">
+        <a href="https://forms.gle/hNcFjzt6q378EgoQ7" class="cta-card-btn btn-bg-amber" target="_blank" rel="noopener">
           Quiero un stand
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -300,7 +275,7 @@
       </div>
       <div class="predio-map">
         <div class="predio-svg-wrap">
-          <img src="assets/plano-predio.png" alt="Plano general de la feria FEPICO — distribución de stands en salón, carpa y exterior" class="predio-img">
+          <img src="assets/plano-predio.svg" alt="Plano general de la feria FEPICO — distribución de stands en salón, carpa y exterior" class="predio-img">
         </div>
         <div class="predio-legend">
           <div class="predio-legend-item">
@@ -315,10 +290,7 @@
             <div class="predio-legend-swatch" style="background: rgba(26,92,138,0.75);"></div>
             <span class="predio-legend-text"><strong>Stands Salón</strong><br>Espacio principal del Club</span>
           </div>
-          <div class="predio-legend-item">
-            <div class="predio-legend-swatch" style="background: #bfe8da; border-radius: 50%; width: 10px; height: 10px;"></div>
-            <span class="predio-legend-text"><strong>Acceso principal</strong><br>Sobre Calle 17</span>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -333,7 +305,7 @@
       <div class="flip-card reveal reveal-delay-1">
         <div class="flip-card-inner">
           <div class="flip-card-face flip-card-front">
-            <div class="flip-front-bg" style="background-image: url('assets/card1.png'); background-size:cover; background-position:center;"></div>
+            <div class="flip-front-bg" style="background-image: url('assets/conectar.jpg'); background-size:cover; background-position:center;"></div>
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">01</div>
@@ -341,7 +313,7 @@
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">🔗</div>
+            
             <div class="flip-back-title">Conectar</div>
             <p class="flip-back-body">Con el ecosistema de la construcción y el hábitat.</p>
           </div>
@@ -351,7 +323,7 @@
       <div class="flip-card amber-back reveal reveal-delay-2">
         <div class="flip-card-inner">
           <div class="flip-card-face flip-card-front">
-            <div class="flip-front-bg" style="background-image: url('assets/card2.png'); background-size:cover; background-position:center;"></div>
+            <div class="flip-front-bg" style="background-image: url('assets/posicionar.jpg'); background-size:cover; background-position:center;"></div>
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">02</div>
@@ -359,7 +331,7 @@
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">📍</div>
+            
             <div class="flip-back-title">Posicionar</div>
             <p class="flip-back-body">Tu marca frente a miles de visitantes y actores del sector.</p>
           </div>
@@ -369,7 +341,7 @@
       <div class="flip-card reveal reveal-delay-3">
         <div class="flip-card-inner">
           <div class="flip-card-face flip-card-front">
-            <div class="flip-front-bg" style="background-image: url('assets/card3.png'); background-size:cover; background-position:center;"></div>
+            <div class="flip-front-bg" style="background-image: url('assets/compartir.jpg'); background-size:cover; background-position:center;"></div>
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">03</div>
@@ -377,7 +349,7 @@
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">💡</div>
+           
             <div class="flip-back-title">Compartir</div>
             <p class="flip-back-body">Experiencias, conocimientos e innovación.</p>
           </div>
@@ -387,7 +359,7 @@
       <div class="flip-card amber-back reveal reveal-delay-4">
         <div class="flip-card-inner">
           <div class="flip-card-face flip-card-front">
-            <div class="flip-front-bg" style="background-image: url('assets/card4.png'); background-size:cover; background-position:center;"></div>
+            <div class="flip-front-bg" style="background-image: url('assets/crecer.jpg'); background-size:cover; background-position:center;"></div>
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">04</div>
@@ -395,7 +367,7 @@
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">📈</div>
+          
             <div class="flip-back-title">Crecer</div>
             <p class="flip-back-body">Con nuevas oportunidades de negocio.</p>
           </div>
@@ -405,7 +377,7 @@
       <div class="flip-card reveal reveal-delay-5">
         <div class="flip-card-inner">
           <div class="flip-card-face flip-card-front">
-            <div class="flip-front-bg" style="background-image: url('assets/card5.png'); background-size:cover; background-position:center;"></div>
+            <div class="flip-front-bg" style="background-image: url('assets/trascender.jpg'); background-size:cover; background-position:center;"></div>
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">05</div>
@@ -413,7 +385,7 @@
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">🏆</div>
+           
             <div class="flip-back-title">Trascender</div>
             <p class="flip-back-body">Siendo protagonista desde la primera edición.</p>
           </div>
@@ -427,13 +399,13 @@
             <div class="flip-front-overlay"></div>
             <div class="flip-front-content">
               <div class="flip-front-num">06</div>
-              <div class="flip-front-title">Ser parte</div>
+              <div class="flip-front-title">Estar</div>
             </div>
           </div>
           <div class="flip-card-face flip-card-back">
-            <div class="flip-back-icon">🌱</div>
-            <div class="flip-back-title">Ser parte</div>
-            <p class="flip-back-body">FEPICO fue pensada para generar conexiones y acercar a todos los actores de la construcción y el hábitat en un mismo lugar.</p>
+           
+            <div class="flip-back-title">Estar</div>
+            <p class="flip-back-body">Generando conexiones y acercando a los actores de la construcción y el hábitat.</p>
           </div>
         </div>
       </div>
@@ -446,7 +418,7 @@
 <section class="anfitrion" id="anfitrion">
   <div class="anfitrion-inner">
     <div class="anfitrion-photo reveal-left">
-      <div class="anfitrion-photo-bg" style="background-image: url('assets/ferroimg.jpg'); background-size:cover; background-position:center;">
+      <div class="anfitrion-photo-bg" style="background-image: url('assets/ferroimg.jpeg'); background-size:cover; background-position:center;">
         <div class="anfitrion-photo-placeholder">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="4" stroke="#0f6e56" stroke-width="2"/><circle cx="24" cy="24" r="7" stroke="#0f6e56" stroke-width="2"/><path d="M8 44L20 30l10 10 10-14 16 18H8z" stroke="#0f6e56" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
           <div style="font-size:12px; margin-top:10px; font-weight:600;">Foto del Club Ferro</div>
@@ -719,7 +691,19 @@
         </div>
       </div>
     </div>
-
+      <div class="auspiciante-item placeholder">
+        <div class="auspiciante-box">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="#999" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="auspiciante-name">Próximamente</span>
+      </div>
+      <div class="auspiciante-item placeholder">
+        <div class="auspiciante-box">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="#999" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="auspiciante-name">Próximamente</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -734,13 +718,13 @@
           <div class="contact-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/></svg>
           </div>
-          <a href="mailto:fepico.lapampa@gmail.com" class="contact-text">fepico.lapampa@gmail.com</a>
+          <a href="https://mail.google.com/mail/?view=cm&to=fepico.lapampa@gmail.com&su=Consulta FEPICO 2026" target="_blank" class="contact-text">fepico.lapampa@gmail.com</a>
         </div>
         <div class="contact-item">
           <div class="contact-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/></svg>
           </div>
-          <a href="tel:+542302156403" class="contact-text">02302 15640303</a>
+          <a href="https://wa.me/+54230215640303" class="contact-text">02302 15640303</a>
         </div>
         <div class="contact-item">
           <div class="contact-icon">
@@ -748,15 +732,14 @@
           </div>
           <a href="https://instagram.com/fepico.lapampa" target="_blank" rel="noopener" class="contact-text">@fepico.lapampa</a>
         </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+       </div>
+          <a href="https://www.facebook.com/profile.php?id=61590929122166" target="_blank" rel="noopener" class="contact-text">fepico.lapampa</a>
+        </div> 
       </div>
-      <div class="contact-socials">
-        <a href="https://instagram.com/fepico.lapampa" target="_blank" rel="noopener" class="contact-social">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/></svg>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61590929122166" target="_blank" rel="noopener" class="contact-social">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
+     
     </div>
     <div class="contact-map">
       <iframe
@@ -781,14 +764,7 @@
       <span class="footer-sub">construcción y hábitat</span>
     </div>
     <span class="footer-center">9 · 10 · 11 octubre 2026 · General Pico, La Pampa</span>
-    <div class="footer-socials">
-      <a href="https://instagram.com/fepico.lapampa" target="_blank" rel="noopener" class="footer-social">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/></svg>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61590929122166" target="_blank" rel="noopener" class="footer-social">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
+    
   </div>
 </footer>
 <script>
@@ -846,100 +822,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ============ MANIFIESTO SLIDER ============ */
-  (function() {
-    const slider = document.getElementById('manif-slider');
-    const slides = document.querySelectorAll('.manif-slide');
-    const dotsContainer = document.getElementById('manif-dots');
-    const hint = document.getElementById('manif-hint');
-    if (!slider || !slides.length) return;
+  /* ============ MANIFIESTO VER MÁS + SCROLL-REVEAL ============ */
+  const manifestoParagraphs = document.querySelectorAll('.manifiesto-p');
+  const manifBody = document.getElementById('manifiesto-body');
+  const manifBtn = document.getElementById('manifiesto-btn');
 
-    let index = 0;
-    let isThrottled = false;
-    let sliderActive = false;
-
-    // Crear dots
-    slides.forEach((_, i) => {
-      const dot = document.createElement('div');
-      dot.className = 'manif-dot' + (i === 0 ? ' active' : '');
-      dot.addEventListener('click', () => goTo(i));
-      dotsContainer.appendChild(dot);
-    });
-
-    // Barra de progreso inferior
-    const bar = document.createElement('div');
-    bar.className = 'manif-progress';
-    slider.appendChild(bar);
-
-    function updateProgress() {
-      bar.style.width = ((index + 1) / slides.length * 100) + '%';
+  if (manifestoParagraphs.length) {
+    if (!('IntersectionObserver' in window)) {
+      manifestoParagraphs.forEach(p => p.classList.add('lit'));
+    } else {
+      const manifObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('lit');
+        });
+      }, { rootMargin: '0px 0px -30% 0px', threshold: 0.2 });
+      manifestoParagraphs.forEach(p => manifObserver.observe(p));
     }
+  }
 
-    function goTo(newIndex) {
-      if (isThrottled) return;
-      isThrottled = true;
-
-      slides[index].classList.remove('active');
-      document.querySelectorAll('.manif-dot')[index].classList.remove('active');
-
-      index = Math.max(0, Math.min(newIndex, slides.length - 1));
-
-      slides[index].classList.add('active');
-      document.querySelectorAll('.manif-dot')[index].classList.add('active');
-      updateProgress();
-
-      // Ocultar hint después del primer avance
-      if (index > 0 && hint) hint.classList.add('hidden');
-
-      setTimeout(() => { isThrottled = false; }, 750);
-    }
-
-    // Activar el slider cuando entra en viewport
-    const sliderObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => { sliderActive = e.isIntersecting; });
-    }, { threshold: 0.6 });
-    sliderObserver.observe(slider);
-
-    // Wheel — intercepta solo cuando está activo
-    window.addEventListener('wheel', (e) => {
-      if (!sliderActive) return;
-
-      // Si es el último slide y scrollea hacia abajo → liberar
-      if (index === slides.length - 1 && e.deltaY > 0) return;
-      // Si es el primer slide y scrollea hacia arriba → liberar
-      if (index === 0 && e.deltaY < 0) return;
-
-      e.preventDefault();
-      goTo(e.deltaY > 0 ? index + 1 : index - 1);
-    }, { passive: false });
-
-    // Touch
-    let startY = 0;
-    window.addEventListener('touchstart', e => { startY = e.touches[0].clientY; });
-    window.addEventListener('touchend', e => {
-      if (!sliderActive) return;
-      const diff = startY - e.changedTouches[0].clientY;
-      if (Math.abs(diff) > 40) {
-        if (index === slides.length - 1 && diff > 0) return;
-        if (index === 0 && diff < 0) return;
-        goTo(diff > 0 ? index + 1 : index - 1);
-      }
+  // Botón ver más / ver menos
+  if (manifBtn && manifBody) {
+    manifBtn.addEventListener('click', () => {
+      const expanded = manifBody.classList.toggle('expanded');
+      manifBtn.setAttribute('aria-expanded', expanded);
+      manifBtn.querySelector('.manifiesto-btn-label').textContent = expanded ? 'Ver menos' : 'Ver más';
     });
+  }
 
-    // Teclado
-    window.addEventListener('keydown', (e) => {
-      if (!sliderActive) return;
-      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); goTo(index + 1); }
-      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); goTo(index - 1); }
-    });
-
-    updateProgress();
-  })();
-
-  /* ============ MANIFIESTO VER MÁS + SCROLL-REVEAL (legacy - desactivado) ============ */
-  // La lógica del manifiesto ahora es el slider de arriba
-
-
+  /* ============ FAQ ACCORDION ============ */
   function toggleFaq(item) {
     const wasOpen = item.classList.contains('open');
     document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
@@ -1003,10 +913,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
 </script>
 
 <!-- WhatsApp flotante -->
-<a href="#" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+<a href="https://wa.me/+54230215640303 " class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.057 23.273a.75.75 0 00.92.92l5.42-1.474A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.714 9.714 0 01-5.004-1.386l-.36-.214-3.733 1.015 1.015-3.733-.214-.36A9.714 9.714 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
