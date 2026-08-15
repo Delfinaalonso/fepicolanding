@@ -414,6 +414,12 @@ ul { list-style: none; }
 .tier-plata     .auspiciante-box  { width: 150px; height: 84px;  }
 .tier-bronce    .auspiciante-box  { width: 120px; height: 68px;  }
 
+/* Bronce: máximo 3 por fila */
+.tier-bronce .auspiciantes-row {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 /* ============ MÉTRICAS ============ */
 .metrics {
   background: var(--verde-noche);
