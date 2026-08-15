@@ -409,15 +409,15 @@ ul { list-style: none; }
 }
 
 /* Tamaños por jerarquía de categoría */
-.tier-acompanan .auspiciante-box  { width: 220px; height: 120px; }
-.tier-oro       .auspiciante-box  { width: 180px; height: 100px; }
-.tier-plata     .auspiciante-box  { width: 150px; height: 84px;  }
-.tier-bronce    .auspiciante-box  { width: 120px; height: 68px;  }
+.tier-acompanan .auspiciante-box  { width: 280px; height: 150px; }
+.tier-oro       .auspiciante-box  { width: 220px; height: 120px; }
+.tier-plata     .auspiciante-box  { width: 180px; height: 100px; }
+.tier-bronce    .auspiciante-box  { width: 150px; height: 84px;  }
 
 /* Bronce: exactamente 3 por fila con grid */
 .tier-bronce .auspiciantes-row {
   display: grid;
-  grid-template-columns: repeat(3, 120px);
+  grid-template-columns: repeat(3, 150px);
   justify-content: center;
   gap: 16px 24px;
 }
@@ -1083,10 +1083,11 @@ ul { list-style: none; }
   .hero-h1 { font-size: 38px; }
 
   .auspiciantes-row { gap: 24px 36px; }
-  .tier-acompanan .auspiciante-box { width: 170px; height: 95px; }
-  .tier-oro       .auspiciante-box { width: 140px; height: 80px; }
-  .tier-plata     .auspiciante-box { width: 120px; height: 68px; }
-  .tier-bronce    .auspiciante-box { width: 100px; height: 56px; }
+  .tier-acompanan .auspiciante-box { width: 220px; height: 120px; }
+  .tier-oro       .auspiciante-box { width: 180px; height: 100px; }
+  .tier-plata     .auspiciante-box { width: 150px; height: 84px; }
+  .tier-bronce    .auspiciante-box { width: 120px; height: 68px; }
+  .tier-bronce .auspiciantes-row { grid-template-columns: repeat(3, 120px); }
   .metrics-cards { grid-template-columns: repeat(2, 1fr); }
   .evento-grid { grid-template-columns: 1fr; }
 
@@ -1120,12 +1121,12 @@ ul { list-style: none; }
   .participa-h { font-size: 28px; }
   .auspiciantes-tier { max-width: 100%; }
   .auspiciantes-row { gap: 18px 24px; }
-  .tier-acompanan .auspiciante-box { width: 130px; height: 72px; }
-  .tier-oro       .auspiciante-box { width: 110px; height: 62px; }
-  .tier-plata     .auspiciante-box { width: 95px;  height: 54px; }
-  .tier-bronce    .auspiciante-box { width: 80px;  height: 46px; }
+  .tier-acompanan .auspiciante-box { width: 160px; height: 90px; }
+  .tier-oro       .auspiciante-box { width: 130px; height: 74px; }
+  .tier-plata     .auspiciante-box { width: 110px; height: 62px; }
+  .tier-bronce    .auspiciante-box { width: 90px;  height: 52px; }
   .tier-bronce .auspiciantes-row {
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, 90px);
     gap: 12px 16px;
   }
   .metrics-cards { grid-template-columns: 1fr 1fr; }
