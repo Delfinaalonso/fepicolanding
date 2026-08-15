@@ -414,14 +414,6 @@ ul { list-style: none; }
 .tier-plata     .auspiciante-box  { width: 180px; height: 100px; }
 .tier-bronce    .auspiciante-box  { width: 150px; height: 84px;  }
 
-/* Bronce: exactamente 3 por fila con grid */
-.tier-bronce .auspiciantes-row {
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-  justify-content: center;
-  gap: 16px 24px;
-}
-
 /* ============ MÉTRICAS ============ */
 .metrics {
   background: var(--verde-noche);
