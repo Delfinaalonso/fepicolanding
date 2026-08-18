@@ -408,15 +408,16 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Logo muy horizontal — menos padding para que ocupe más */
+/* Forestal Pico — muy horizontal, box ancho y bajo */
 .auspiciante-box-wide {
   padding: 2px;
-  width: 280px;
+  width: 260px;
+  height: 70px;
 }
-/* Logo cuadrado — un poco más chico para equilibrar con los horizontales */
+/* Materiales Centro — casi cuadrado, reducir ancho */
 .auspiciante-box-sm {
-  width: 160px;
-  height: 120px;
+  width: 150px;
+  height: 110px;
 }
 .tier-acompanan .auspiciante-box  { width: 224px; height: 120px; }
 .tier-oro       .auspiciante-box  { width: 185px; height: 101px; }
