@@ -408,7 +408,11 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Tamaños por jerarquía de categoría */
+/* Logo muy horizontal — menos padding para que ocupe más */
+.auspiciante-box-wide {
+  padding: 2px;
+  width: 280px;
+}
 .tier-acompanan .auspiciante-box  { width: 280px; height: 150px; }
 .tier-oro       .auspiciante-box  { width: 220px; height: 120px; }
 .tier-plata     .auspiciante-box  { width: 180px; height: 100px; }
