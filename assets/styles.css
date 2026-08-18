@@ -420,8 +420,8 @@ ul { list-style: none; }
   height: 110px;
 }
 .tier-acompanan .auspiciante-box  { width: 224px; height: 120px; }
-.tier-oro       .auspiciante-box  { width: 185px; height: 101px; }
-.tier-plata     .auspiciante-box  { width: 180px; height: 100px; }
+.tier-oro       .auspiciante-box  { width: 210px; height: 115px; }
+.tier-plata     .auspiciante-box  { width: 155px; height: 86px;  }
 .tier-bronce    .auspiciante-box  { width: 162px; height: 91px;  }
 
 /* ============ MÉTRICAS ============ */
@@ -1086,8 +1086,8 @@ ul { list-style: none; }
 
   .auspiciantes-row { gap: 24px 36px; }
   .tier-acompanan .auspiciante-box { width: 176px; height: 96px; }
-  .tier-oro       .auspiciante-box { width: 151px; height: 84px; }
-  .tier-plata     .auspiciante-box { width: 150px; height: 84px; }
+  .tier-oro       .auspiciante-box { width: 170px; height: 95px; }
+  .tier-plata     .auspiciante-box { width: 130px; height: 72px; }
   .tier-bronce    .auspiciante-box { width: 130px; height: 74px; }
   .tier-bronce .auspiciantes-row { grid-template-columns: repeat(3, 130px); }
   .metrics-cards { grid-template-columns: repeat(2, 1fr); }
@@ -1124,8 +1124,8 @@ ul { list-style: none; }
   .auspiciantes-tier { max-width: 100%; }
   .auspiciantes-row { gap: 18px 24px; }
   .tier-acompanan .auspiciante-box { width: 128px; height: 72px; }
-  .tier-oro       .auspiciante-box { width: 109px; height: 62px; }
-  .tier-plata     .auspiciante-box { width: 110px; height: 62px; }
+  .tier-oro       .auspiciante-box { width: 125px; height: 70px; }
+  .tier-plata     .auspiciante-box { width: 95px;  height: 54px; }
   .tier-bronce    .auspiciante-box { width: 97px;  height: 56px; }
   .tier-bronce .auspiciantes-row {
     grid-template-columns: repeat(3, 90px);
