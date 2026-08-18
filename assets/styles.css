@@ -408,11 +408,11 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Forestal Pico — muy horizontal, box ancho y bajo */
+/* Forestal Pico — muy horizontal, box proporcional al logo */
 .auspiciante-box-wide {
   padding: 2px;
   width: 380px;
-  height: 70px;
+  height: 100px;
 }
 /* Materiales Centro — casi cuadrado, reducir ancho */
 .auspiciante-box-sm {
