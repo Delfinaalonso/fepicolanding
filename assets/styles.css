@@ -419,6 +419,12 @@ ul { list-style: none; }
   width: 150px;
   height: 110px;
 }
+/* Logo horizontal en Bronce — más ancho que el box estándar */
+.auspiciante-box-wide-sm {
+  padding: 2px;
+  width: 210px;
+  height: 68px;
+}
 .tier-acompanan .auspiciante-box  { width: 224px; height: 120px; }
 .tier-oro       .auspiciante-box  { width: 210px; height: 115px; }
 .tier-plata     .auspiciante-box  { width: 170px; height: 95px;  }
