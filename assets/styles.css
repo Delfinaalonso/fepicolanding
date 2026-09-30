@@ -822,8 +822,16 @@ ul { list-style: none; }
   letter-spacing: 0.1em;
   color: var(--amber);
 }
-.prog-title { font-size: 18px; font-weight: 600; color: white; margin: 6px 0 6px; }
-.prog-desc { font-size: 15px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+.prog-title { font-size: 17px; font-weight: 600; color: white; line-height: 1.35; margin: 6px 0 8px; }
+.prog-meta { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.55; }
+.prog-meta span { color: rgba(255,255,255,0.35); }
+.prog-place {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: rgba(255,255,255,0.4);
+}
+.prog-empty .prog-meta { font-style: italic; }
 .prog-inscribir {
   display: inline-flex; align-items: center; gap: 6px;
   margin-top: 12px;
