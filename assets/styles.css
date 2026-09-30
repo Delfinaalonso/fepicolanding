@@ -414,11 +414,7 @@ ul { list-style: none; }
   width: 380px;
   height: 100px;
 }
-/* Materiales Centro — casi cuadrado, reducir ancho */
-.auspiciante-box-sm {
-  width: 150px;
-  height: 110px;
-}
+
 /* Logo horizontal en Bronce — más ancho que el box estándar */
 .auspiciante-box-wide-sm {
   padding: 2px;
@@ -430,6 +426,11 @@ ul { list-style: none; }
 .tier-plata     .auspiciante-box  { width: 170px; height: 95px;  }
 .tier-bronce    .auspiciante-box  { width: 162px; height: 91px;  }
 
+/* Materiales Centro — casi cuadrado, reducir ancho */
+.auspiciante-box-sm {
+  width: 100px;
+  height: 80px;
+}
 /* ============ MÉTRICAS ============ */
 .metrics {
   background: var(--verde-noche);
@@ -1094,6 +1095,11 @@ ul { list-style: none; }
   .tier-acompanan .auspiciante-box { width: 176px; height: 96px; }
   .tier-oro       .auspiciante-box { width: 170px; height: 95px; }
   .tier-plata     .auspiciante-box { width: 135px; height: 76px; }
+  /* Materiales Centro — casi cuadrado, reducir ancho */
+.auspiciante-box-sm {
+  width: 100px;
+  height: 80px;
+}
   .tier-bronce    .auspiciante-box { width: 130px; height: 74px; }
   .tier-bronce .auspiciantes-row { grid-template-columns: repeat(3, 130px); }
   .metrics-cards { grid-template-columns: repeat(2, 1fr); }
@@ -1132,6 +1138,10 @@ ul { list-style: none; }
   .tier-acompanan .auspiciante-box { width: 128px; height: 72px; }
   .tier-oro       .auspiciante-box { width: 125px; height: 70px; }
   .tier-plata     .auspiciante-box { width: 100px; height: 57px; }
+  .auspiciante-box-sm {
+  width: 90px;
+  height: 60px;
+}
   .tier-bronce    .auspiciante-box { width: 97px;  height: 56px; }
   .tier-bronce .auspiciantes-row {
     grid-template-columns: repeat(3, 90px);
