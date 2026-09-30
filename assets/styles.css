@@ -751,102 +751,95 @@ ul { list-style: none; }
   margin-bottom: 64px;
 }
 
-/* --- Programa (acordeón por día) --- */
+/* --- Programa (pestañas por día + agenda por horario) --- */
 .programa { margin-bottom: 96px; scroll-margin-top: 90px; }
-.programa-head { text-align: center; max-width: 640px; margin: 0 auto 48px; }
-.prog-days {
+.programa-head { text-align: center; max-width: 640px; margin: 0 auto 40px; }
+.prog-tabs {
+  display: flex; justify-content: center; gap: 8px;
+  margin-bottom: 22px;
+}
+.prog-tab {
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.7);
+  font-size: 15px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.prog-tab span { opacity: 0.5; margin-right: 6px; }
+.prog-tab:hover { border-color: rgba(255,255,255,0.4); color: white; }
+.prog-tab.active { background: var(--amber); border-color: var(--amber); color: white; }
+.prog-salas {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px;
+  margin-bottom: 36px;
+  font-size: 13px; color: rgba(255,255,255,0.45);
+}
+.prog-sala-ref { display: inline-flex; align-items: center; gap: 6px; }
+.prog-sala-ref strong { color: rgba(255,255,255,0.75); font-weight: 600; }
+.prog-sala-ref .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot.sala-social { background: var(--amber); }
+.dot.sala-teresita { background: #3fb58f; }
+.dot.sala-piso { background: #5a9fd4; }
+
+.prog-panel { display: none; max-width: 1080px; margin: 0 auto; }
+.prog-panel.active { display: block; animation: progFade 0.3s ease; }
+@keyframes progFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.prog-slot {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-  align-items: start;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-.prog-day {
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
-  overflow: hidden;
-  transition: border-color 0.25s ease;
+.prog-slot:last-child { border-bottom: 1px solid rgba(255,255,255,0.1); }
+.prog-slot-time {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--amber);
+  padding-top: 16px;
 }
-.prog-day.open { border-color: rgba(212,131,42,0.55); }
-.prog-day-head {
-  width: 100%;
+.prog-slot-items { display: flex; flex-direction: column; }
+.prog-card {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
   align-items: center;
-  text-align: left;
-  padding: 22px 24px;
-  color: white;
-  transition: background 0.25s ease;
+  column-gap: 24px;
+  padding: 14px 0;
 }
-.prog-day-head:hover { background: rgba(255,255,255,0.04); }
-.prog-day.open .prog-day-head { background: var(--amber); }
-.prog-day-num {
-  font-family: var(--font-display);
-  font-size: 36px;
-  line-height: 1;
-  color: rgba(255,255,255,0.35);
+.prog-card + .prog-card { border-top: 1px dashed rgba(255,255,255,0.08); }
+.prog-title { font-size: 16px; font-weight: 600; color: white; line-height: 1.35; }
+.prog-meta {
+  margin-top: 4px;
+  font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5;
 }
-.prog-day.open .prog-day-num { color: rgba(255,255,255,0.6); }
-.prog-day-label {
-  grid-column: 1;
-  margin-top: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.prog-day-arrow {
-  grid-column: 2; grid-row: 1 / span 2;
-  width: 10px; height: 10px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
-  transition: transform 0.25s ease;
-}
-.prog-day.open .prog-day-arrow { transform: rotate(-135deg); }
-.prog-day-body {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease;
-}
-.prog-day.open .prog-day-body { grid-template-rows: 1fr; }
-.prog-day-body-inner { min-height: 0; overflow: hidden; }
-.prog-item {
-  padding: 20px 24px;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-.prog-time {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--amber);
-}
-.prog-title { font-size: 17px; font-weight: 600; color: white; line-height: 1.35; margin: 6px 0 8px; }
-.prog-meta { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.55; }
-.prog-meta span { color: rgba(255,255,255,0.35); }
-.prog-place {
-  margin-top: 8px;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: rgba(255,255,255,0.4);
-}
-.prog-empty .prog-meta { font-style: italic; }
+.prog-meta .sep { color: rgba(255,255,255,0.25); margin: 0 2px; }
+.prog-by { color: rgba(255,255,255,0.38); }
+.prog-sala { font-weight: 700; }
+.prog-sala.sala-social { color: #f0b36a; }
+.prog-sala.sala-teresita { color: #6fd3b0; }
+.prog-sala.sala-piso { color: #8cc0ea; }
+.prog-card-special .prog-title { font-size: 18px; color: var(--amber); }
 .prog-inscribir {
   display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 12px;
+  white-space: nowrap;
+  padding: 7px 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
   font-size: 13px; font-weight: 600;
-  letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.7);
-  border-bottom: 1px solid rgba(212,131,42,0.5);
-  padding-bottom: 2px;
+  color: rgba(255,255,255,0.8);
   transition: color 0.2s ease, border-color 0.2s ease;
 }
+.prog-inscribir span { transition: transform 0.2s ease; }
 .prog-inscribir:hover { color: var(--amber); border-color: var(--amber); }
-@media (max-width: 980px) {
-  .prog-days { grid-template-columns: 1fr; }
+.prog-inscribir:hover span { transform: translateX(3px); }
+@media (max-width: 700px) {
+  .prog-slot { grid-template-columns: 1fr; gap: 0; }
+  .prog-slot-time { font-size: 20px; }
+  .prog-card { grid-template-columns: 1fr; row-gap: 10px; }
+  .prog-inscribir { justify-self: start; }
+  .prog-tab { padding: 11px 18px; font-size: 14px; }
+  .prog-salas { flex-direction: column; align-items: center; }
 }
 
 /* --- Mapa del predio --- */
