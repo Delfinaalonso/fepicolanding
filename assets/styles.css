@@ -756,9 +756,11 @@ ul { list-style: none; }
 .programa-head { text-align: center; max-width: 640px; margin: 0 auto 48px; }
 .prog-days {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .prog-day {
   border-radius: 14px;
