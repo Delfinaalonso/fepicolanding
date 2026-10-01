@@ -27,6 +27,9 @@
 
 html { scroll-behavior: smooth; }
 
+/* Evita scroll lateral por elementos decorativos que sobresalen */
+html, body { overflow-x: clip; }
+
 body {
   font-family: var(--font);
   background: var(--cream);
