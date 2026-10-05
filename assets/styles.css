@@ -273,6 +273,19 @@ ul { list-style: none; }
   margin-top: 18px;
 }
 .hero-dates-rest strong { color: white; font-weight: 700; }
+.hero-dates-hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(212,131,42,0.25);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+}
+.hero-dates-hours svg { color: var(--amber); flex-shrink: 0; }
+.hero-dates-hours strong { color: white; font-weight: 700; }
 
 /* ============ COUNTDOWN ============ */
 .countdown {
