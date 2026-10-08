@@ -896,6 +896,9 @@ ul { list-style: none; }
   }
 }
 
+/* Sección propia de programa + predio (arriba del manifiesto) */
+.programa-section .predio-wrap { margin-bottom: 0; }
+
 /* --- Mapa del predio --- */
 .predio-wrap {
   margin-bottom: 64px;
