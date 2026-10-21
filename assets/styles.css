@@ -896,19 +896,6 @@ ul { list-style: none; }
   }
 }
 
-/* Botón descargar plano */
-.predio-download { text-align: center; margin-top: 24px; }
-.predio-download-btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 11px 22px;
-  border: 1px solid rgba(212,131,42,0.6);
-  border-radius: 999px;
-  font-size: 15px; font-weight: 600;
-  color: var(--amber);
-  transition: background 0.2s ease, color 0.2s ease;
-}
-.predio-download-btn:hover { background: var(--amber); color: white; }
-
 /* Sección propia de programa + predio (arriba del manifiesto) */
 .programa-section .predio-wrap { margin-bottom: 0; }
 
@@ -1511,6 +1498,18 @@ ul { list-style: none; }
   pointer-events: none;
   user-select: none;
 }
+.predio-download { text-align: center; margin-top: 24px; }
+.predio-download-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 22px;
+  border: 1px solid rgba(212,131,42,0.6);
+  border-radius: 999px;
+  font-size: 15px; font-weight: 600;
+  color: var(--amber);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.predio-download-btn:hover { background: var(--amber); color: white; }
+
 
 /* Manifiesto - responsive */
 @media (max-width: 980px) {
@@ -1518,4 +1517,16 @@ ul { list-style: none; }
   .manifiesto-p { font-size: clamp(24px, 6vw, 44px); }
   .manifiesto-highlight { font-size: clamp(28px, 7vw, 52px) !important; }
 }
+
+.predio-download { text-align: center; margin-top: 24px; }
+.predio-download-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 22px;
+  border: 1px solid rgba(212,131,42,0.6);
+  border-radius: 999px;
+  font-size: 15px; font-weight: 600;
+  color: var(--amber);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.predio-download-btn:hover { background: var(--amber); color: white; }
 
