@@ -197,7 +197,7 @@ src="https://www.facebook.com/tr?id=1031623779731311&ev=PageView&noscript=1"
       <button class="g-item g-extra" type="button" data-full="assets/galeria/fepico-36.jpg" aria-label="Ver foto 36 de 36"><img src="assets/galeria/fepico-36-mini.jpg" alt="FEPICO 2026 — registro del evento" loading="lazy"></button>
     </div>
     <div class="galeria-more-wrap">
-      <button class="galeria-more" type="button" aria-expanded="false">Ver las 36 fotos</button>
+      <button class="galeria-more" type="button" aria-expanded="false">Ver más</button>
     </div>
   </div>
 </section>
@@ -895,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.galeria-grid');
     const open = grid.classList.toggle('show-all');
     moreBtn.setAttribute('aria-expanded', open);
-    moreBtn.textContent = open ? 'Ver menos' : 'Ver las 36 fotos';
+    moreBtn.textContent = open ? 'Ver menos' : 'Ver más';
     if (!open) document.querySelector('#galeria').scrollIntoView({ behavior: 'smooth' });
   });
   const lb = document.querySelector('.lightbox');
