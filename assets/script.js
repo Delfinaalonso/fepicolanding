@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ============ COUNTDOWN ============ */
   function updateCountdown() {
-    const target = new Date('2026-10-09T09:00:00-03:00');
+    const target = new Date('2027-10-08T10:00:00-03:00');
     const now = new Date();
     const diff = target - now;
 

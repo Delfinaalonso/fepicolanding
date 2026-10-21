@@ -472,7 +472,7 @@ ul { list-style: none; }
 .metrics-h em { color: var(--amber); font-style: normal; }
 .metrics-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 .m-card {
